@@ -26,7 +26,16 @@ body {
   font-family: 'Syne', Mulish;
 }
 
+img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
 
+.container {
+  width: var(--clr-lg-width);
+  margin: 0 auto;
+}
 
 button {
   font-family: inherit;
