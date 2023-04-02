@@ -1,6 +1,21 @@
 :root {
+
+  /*======== Color =======*/
   --clr-white: #fff;
   --clr-black: #000;
+
+  /*======== Devices Width =======*/
+  --clr-lg-width: 70%;
+  --clr-md-width: 80%;
+  --clr-sm-width: 92%;
+
+
+
+  /*======== Transition =======*/
+  --transition: all 350ms ease;
+
+
+
 }
 
 
@@ -14,7 +29,6 @@ body {
 
 
 button {
-
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
