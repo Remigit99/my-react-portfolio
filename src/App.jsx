@@ -11,7 +11,6 @@ const App = () => {
   return (
     <div className="container app__container">
 
-      <h1>You Are Welcome To My World</h1>
       <Nav />
       <Header />
       <About />

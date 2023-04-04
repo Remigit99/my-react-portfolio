@@ -1,0 +1,32 @@
+nav {
+    display: grid;
+    place-items: center;
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+    position: fixed;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--clr-floating-nav);
+    backdrop-filter: blur(5px);
+}
+
+.nav__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav__links li[title="Home"] {
+    background-color: red;
+}
+
+.nav__links .nav__icons {
+    font-size: 1.5rem;
+    transition: var(--transition);
+}
+
+.nav__icons:hover {
+    color: var(--clr-primary-variant);
+}

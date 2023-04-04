@@ -1,40 +1,156 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+
 :root {
 
   /*======== Color =======*/
   --clr-white: #fff;
   --clr-black: #000;
+  --clr-floating-nav: hsla(0, 0%, 0%, 0.8);
+  --clr-bg1: #002b53;
+  --clr-bg: #21272F;
+  --clr-bg-2-1: #040c18;
+  --clr-bg2: #1C383A;
+  --clr-primary: #4db5ff;
+  --clr-primary-variant: rgba(77, 181, 255, .4);
+  --clr-light: rgba(255, 255, 255, .6);
 
   /*======== Devices Width =======*/
-  --clr-lg-width: 70%;
-  --clr-md-width: 80%;
-  --clr-sm-width: 92%;
+  --container-lg-width: 70%;
+  --container-md-width: 80%;
+  --container-sm-width: 92%;
 
 
 
   /*======== Transition =======*/
   --transition: all 350ms ease;
 
-
-
 }
 
 
+/*================= General settings ===========*/
 
-body {
-  max-width: 1500px;
-  min-height: 100vh;
-  font-family: 'Syne', Mulish;
+html {
+  scroll-behavior: smooth;
 }
 
-img {
-  display: block;
-  object-fit: cover;
-  width: 100%;
+section {
+  padding: 5rem 0;
 }
 
 .container {
-  width: var(--clr-lg-width);
   margin: 0 auto;
+  width: var(--container-width-lg);
+}
+
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover
+}
+
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.7rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.89rem;
+}
+
+p {
+  font-size: 1rem;
+  color: var(--clr-grey);
+}
+
+body {
+  background-color: var(--clr-bg1);
+  color: var(--clr-white);
+  line-height: 1.4;
+  font-family: 'Mulish', sans-serif;
+  min-height: 100vh;
+  max-width: 1500px;
+  font-family: 'Syne', Mulish;
+}
+
+p {
+  font-size: 1rem;
+  color: var(--clr-grey);
+}
+
+section h4:nth-child(1) {
+  color: var(--clr-light);
+  margin-bottom: 1rem;
+}
+
+.section__header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.btn_primary {
+  border: 1px solid var(--clr-primary);
+  padding: .3rem 1rem;
+  color: var(--clr-primary);
+  border-radius: 1rem;
+  transition: var(--transition);
+
+}
+
+.btn_primary:hover {
+  border: 1px solid var(--clr-white);
+  color: var(--clr-white);
+}
+
+.btn_secondary {
+  background: var(--clr-primary);
+  padding: .3rem 1rem;
+  color: var(--clr-black);
+  border-radius: 1rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.btn_secondary:hover {
+  background: transparent;
+  border: 1px solid var(--clr-primary);
+  color: var(--clr-white);
+}
+
+
+
+/*========= HERO SECTION ==============*/
+
+.header__container {
+  text-align: center;
+  margin-top: 5rem;
+  position: relative;
 }
 
 button {
