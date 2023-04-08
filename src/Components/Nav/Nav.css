@@ -18,9 +18,9 @@ nav {
     gap: 2rem;
 }
 
-.nav__links li[title="Home"] {
+/* .nav__links li[title="Home"] {
     background-color: red;
-}
+} */
 
 .nav__links .nav__icons {
     font-size: 1.5rem;
